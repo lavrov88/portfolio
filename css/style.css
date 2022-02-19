@@ -1,0 +1,49 @@
+body {
+   background-color: #eff0f5;
+}
+
+.navbar {
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
+}
+
+.header_links {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+
+/* SECTION */
+
+.page-section {
+   padding: 6rem 0;
+}
+
+.page-section.projects {
+   padding: 8rem 0;
+}
+
+.card-body {
+   height: 100%;
+}
+
+.card-img, .card-title {
+   cursor: pointer;
+}
+
+.btn-details {
+   width: 10rem;
+}
+
+.modal-title {
+   width: 100%;
+   text-align: center;
+}
+
+.modal-img-preview {
+   margin-bottom: 2rem;
+}
+
+.modal-img-preview:last-child {
+   margin-bottom: 0;
+}

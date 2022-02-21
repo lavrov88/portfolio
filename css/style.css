@@ -35,15 +35,15 @@ body {
    width: 10rem;
 }
 
-.modal-title {
-   width: 100%;
-   text-align: center;
-}
-
 .modal-img-preview {
    margin-bottom: 2rem;
 }
 
 .modal-img-preview:last-child {
    margin-bottom: 0;
+}
+
+.modal-info .modal-title {
+   margin-top: -10px;
+   margin-bottom: 20px;
 }

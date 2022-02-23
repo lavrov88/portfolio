@@ -23,6 +23,10 @@ body {
    padding: 8rem 0;
 }
 
+#card-items > .card {
+   min-width: 100%;
+}
+
 .card-body {
    height: 100%;
 }
@@ -33,6 +37,17 @@ body {
 
 .btn-details {
    width: 10rem;
+}
+
+/* MODAL */
+
+.modal-images {
+   max-width: 500px;
+}
+@media (max-width: 768px) {
+   .modal-images{
+      max-width: 100%;
+   }
 }
 
 .modal-img-preview {
@@ -46,4 +61,21 @@ body {
 .modal-info .modal-title {
    margin-top: -10px;
    margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+   .modal-lg,
+   .modal-xl {
+      max-width: 90%;
+   }
+}
+@media (max-width: 768px) {
+   .modal-body > .container > .row {
+      flex-direction: column-reverse;
+   }
+}
+@media (min-width: 576px) {
+   .modal-dialog {
+      max-width: 90%;
+   }
 }

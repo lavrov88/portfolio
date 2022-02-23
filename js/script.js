@@ -1,10 +1,30 @@
 window.addEventListener('DOMContentLoaded', event => {
+
+   const getImages = (project, paths) => {
+      let output = ''
+      paths.forEach(path => {
+         output += `<img src="./img/projects/${project}/${path}" class="img-fluid rounded-start modal-img-preview rounded" alt="preview">`
+      })
+      return output
+   }
+
+   const makeList = (list) => {
+      if (!list || !list.length || !Array.isArray(list)) {
+         return ''
+      }
+      let output = '<ul>'
+      list.forEach(item => {
+         output += `<li>${item}</li>`
+      })
+      return output + '</ul>'
+   }
+
    const generateProjectCard = ({ id, name, imgPreview, description, stackShort }) => {
       return `
       <div class="card mb-5 col-lg-10">
          <div class="row g-0">
             <div class="col-md-4" data-bs-toggle="modal" data-bs-target="#${id}Modal">
-               <img src="./img/projects/${imgPreview}" class="img-fluid rounded-start card-img" alt="${id}">
+               <img src="./img/projects/${id}/${imgPreview}" class="img-fluid rounded-start card-img" alt="${id}">
             </div>
             <div class="col-md-8">
                <div class="card-body d-flex flex-column justify-content-between">
@@ -23,8 +43,7 @@ window.addEventListener('DOMContentLoaded', event => {
       `
    }
 
-   const generateProjectModal = ({ id, name, img1, img2, description, 
-                                 functionality, stackFull, github, deployed }) => {
+   const generateProjectModal = ({ id, name, images, description, functionality, stackFull, github, deployed }) => {
       return `
       <div class="modal fade" id="${id}Modal" tabindex="-1" aria-labelledby="${id}ModalLabel" aria-hidden="true">
          <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
@@ -35,22 +54,21 @@ window.addEventListener('DOMContentLoaded', event => {
             <div class="modal-body">
                <div class="container">
                   <div class="row col-md-12">
-                     <div class="col-md-6">
-                           <img src="./img/projects/${img1}" class="img-fluid rounded-start modal-img-preview" alt="preview">
-                           <img src="./img/projects/${img2}" class="img-fluid rounded-start modal-img-preview" alt="preview">
+                     <div class="col-md-6 p-3 bg-primary bg-gradient bg-opacity-10 rounded modal-images">
+                           ${getImages(id, images)}
                      </div>
-                     <div class="col-md-6 modal-info">
-                        <h2 class="modal-title" id="${id}ModalLabel">${name}</h2>
-                        <div class="project_description">
+                     <div class="col-md-6 modal-info px-5">
+                        <h2 class="modal-title mb-3" id="${id}ModalLabel">${name}</h2>
+                        <div class="project_description mb-4">
                            <p class="lead">${description}</p>
                         </div>
-                        <div class="project_funtionality mb-3">
-                           <h4>Functionality</h4>
-                           ${functionality}
+                        <div class="project_funtionality mb-4">
+                           <h5 class="mb-3">Functionality</h5>
+                           ${makeList(functionality)}
                         </div>
-                        <div class="project_stack">
-                           <h4>Used stack</h4>
-                           ${stackFull}
+                        <div class="project_stack mb-5">
+                           <h5 class="mb-3">Used stack</h5>
+                           ${makeList(stackFull)}
                         </div>
                      </div>
                   </div>
@@ -58,7 +76,7 @@ window.addEventListener('DOMContentLoaded', event => {
             </div>
             <div class="modal-footer border-0 d-flex justify-content-center">
                <a href="${github}" target="_blank" class="btn btn-secondary">GitHub repo</a>
-               <a href="${deployed}" target="_blank" class="btn btn-primary">Open deployed project</a>
+               <a href="${deployed}" target="_blank" class="btn btn-primary">Deployed project</a>
             </div>
          </div>
          </div>

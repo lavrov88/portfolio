@@ -52,35 +52,60 @@ const projects = [
       imgPreview: 'shopping_1.png',
       images: ['shopping_1.png', 'shopping_2.png', 'shopping_3.png', 'shopping_4.png', 'shopping_mob.png'],
       description: "Simple app, which help you to manage your shopping",
-      functionality: "Not yet",
-      stackShort: "Vanilla JS",
+      functionality: [
+         "All lists together are placed on a screen, goods can be turned to bought by one click",
+         "You can add several new goods at one moment. Just write them in add-goods menu, separating with commas.",
+         "Bought goods move to the end of a list. You can delete them from separated list or from all lists using menu button.",
+         "Goods can be sorted, renamed or deleted in list options",
+         "Lists also can be sorted, renamed, added, deleted. Their color can be changed.",
+         "Mobile layout, dark theme and saving data in local storage are included"
+      ],
+      stackShort: "HTML, CSS, JS",
       stackFull: [
-         
-   ],
+         "HTML, CSS, JS"
+      ],
       github: "https://github.com/lavrov88/shopping",
       deployed: "https://lavrov88.github.io/shopping/"
    },
    {
       id: 'social',
       name: 'SamuraiJS social network',
-      imgPreview: null,
-      images: [],
-      description: 'Learning project based on "SamuraiJS training course"',
-      functionality: "Not yet",
+      imgPreview: 'social_1.png',
+      images: ['social_1.png', 'social_2.png', 'social_3.png', 'social_4.png'],
+      description: 'Learning project based on <a href="https://www.youtube.com/playlist?list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8" target="_blank">"SamuraiJS training course"</a>',
+      functionality: [
+         "Social network client. Data is stored at the learning server and is being fetched with REST-API",
+         "Displaying profile page with information, photo and status",
+         "Ability to edit profile data, status and upload a new photo",
+         "List of all users where you can follow them (if logged) or open their profile pages",
+         "Login and logout. The current user is displayed in the header",
+         "Sending posts and messages is only works as test on client side, without a server",
+         "No mobile version yet"
+      ],
       stackShort: "React, Redux, TypeScript",
-      stackFull: "Not yet!",
-      github: null,
-      deployed: null
+      stackFull: [
+         'React (react-router-dom, React.lazy, React.Suspense CSS-modules, SCSS)',
+         'Redux (react-redux, thunk, redux-form)',
+         'TypeScript (partially)',
+         'REST API (fetching from <a href="https://social-network.samuraijs.com/docs" target="_blank">SamuraiJS backend</a>)'
+      ],
+      github: 'https://github.com/lavrov88/social',
+      deployed: 'https://lavrov88.github.io/social/'
    },
    {
       id: 'portfolio',
       name: 'Portfolio',
-      imgPreview: null,
-      images: [],
+      imgPreview: 'portfolio_1.png',
+      images: ['portfolio_1.png'],
       description: 'This page with my projects list',
-      functionality: "Not yet",
+      functionality: [
+         "Just list with my works and popup with details and more screens"
+      ],
       stackShort: "Vanilla JS, Bootstrap",
-      stackFull: "Not yet!",
+      stackFull: [
+         'HTML, CSS, JS',
+         'Bootstrap 5 (styles, modals, buttons, cards)'
+      ],
       github: 'https://github.com/lavrov88/portfolio',
       deployed: "https://lavrov88.github.io/portfolio/"
    }

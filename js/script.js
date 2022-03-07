@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', event => {
       }
       let output = '<ul>'
       list.forEach(item => {
-         output += `<li>${item}</li>`
+         output += `<li class="mb-2">${item}</li>`
       })
       return output + '</ul>'
    }

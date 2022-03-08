@@ -51,7 +51,7 @@ const projects = [
       name: 'Efficient shopping list',
       imgPreview: 'shopping_1.png',
       images: ['shopping_1.png', 'shopping_2.png', 'shopping_3.png', 'shopping_4.png', 'shopping_mob.png'],
-      description: "Simple app, which help you to manage your shopping",
+      description: "Shopping app with easy access to all lists and ability to quickly create several items.",
       functionality: [
          "All lists together are placed on a screen, goods can be turned to bought by one click",
          "You can add several new goods at one moment. Just write them in add-goods menu, separating with commas.",
@@ -91,6 +91,26 @@ const projects = [
       ],
       github: 'https://github.com/lavrov88/social',
       deployed: 'https://lavrov88.github.io/social/'
+   },
+   {
+      id: 'todo-list',
+      name: 'Todo List',
+      imgPreview: 'todo_1.png',
+      images: ['todo_1.png', 'todo_2.png', 'todo_3.png'],
+      description: 'Simple todo app with ability to edit tasks and change their priority',
+      functionality: [
+         'Add, delete, edit tasks, toggle them as completed or change priority',
+         'New task can be added by pressing "+" button or Enter on keyboard',
+         'Task options appears on hover. On mobile version there is options button at the right side.',
+         "App data is saved to local storage and  is being loaded when the app starts",
+         "Too long names of tasks are trimmed. Also empty new task's name is checked.",
+      ],
+      stackShort: "HTML, CSS, JS",
+      stackFull: [
+         'HTML, CSS, JS'
+      ],
+      github: 'https://github.com/lavrov88/todo-list',
+      deployed: "https://lavrov88.github.io/todo-list/"
    },
    {
       id: 'portfolio',

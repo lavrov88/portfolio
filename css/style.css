@@ -3,13 +3,21 @@ body {
 }
 
 .btn-primary {
-   background-color: rgb(var(--bs-primary-rgb));
-   border-color: rgb(var(--bs-primary-rgb));
+   background-color: rgba(64,112,147,1);
+   border-color: rgba(64,112,147,1);
+}
+.btn-primary:hover, 
+.btn-primary:active,
+.btn-primary:focus,
+.btn-check:focus {
+   background-color: rgba(79,137,180,1);
+   border-color: rgba(79,137,180,1);
 }
 
 /* HEADER */
 
 #header {
+   background: linear-gradient(0deg, rgba(79,137,180,1) 0%, rgba(64,112,147,1) 25%);
    transition: padding-top 0.3s ease, padding-bottom 0.3s ease;
 }
 #header h2, #header a, #header .header_link_icon {

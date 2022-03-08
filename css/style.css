@@ -133,6 +133,7 @@ body {
 
 .modal-img-preview {
    margin-bottom: 2rem;
+   max-height: 450px;
 }
 
 .modal-img-preview:last-child {

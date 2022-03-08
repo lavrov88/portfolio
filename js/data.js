@@ -48,9 +48,9 @@ const projects = [
    },
    {
       id: 'shopping',
-      name: 'Efficient shopping list',
+      name: 'Smart shopping list',
       imgPreview: 'shopping_1.png',
-      images: ['shopping_1.png', 'shopping_2.png', 'shopping_3.png', 'shopping_4.png', 'shopping_mob.png'],
+      images: ['shopping_1.png', 'shopping_2.png', 'shopping_3.png', 'shopping_mob.png'],
       description: "Shopping app with easy access to all lists and ability to quickly create several items.",
       functionality: [
          "All lists together are placed on a screen, goods can be turned to bought by one click",

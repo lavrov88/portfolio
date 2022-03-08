@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', event => {
             <div class="modal-body">
                <div class="container">
                   <div class="row col-md-12">
-                     <div class="col-md-6 p-3 bg-primary bg-gradient bg-opacity-10 rounded modal-images">
+                     <div class="col-md-6 p-3 rounded modal-images text-center">
                            ${getImages(id, images)}
                      </div>
                      <div class="col-md-6 modal-info px-5">

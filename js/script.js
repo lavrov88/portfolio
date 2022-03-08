@@ -53,8 +53,14 @@ window.addEventListener('DOMContentLoaded', event => {
                </div>
             </div>
             <div class="modal-footer border-0 d-flex justify-content-center">
-               <a href="${github}" target="_blank" class="btn btn-secondary">GitHub repo</a>
-               <a href="${deployed}" target="_blank" class="btn btn-primary">Deployed project</a>
+               <a href="${github}" target="_blank" class="btn btn-secondary">
+                  <img class="modal_btn_icon gh-icon" src="./img/icons/github-svgrepo-com.svg" alt="">
+                  GitHub repo
+               </a>
+               ${deployed && `<a href="${deployed}" target="_blank" class="btn btn-primary">
+                  <img class="modal_btn_icon deploy-icon" src="./img/icons/play-svgrepo-com.svg" alt="">
+                  Deployed project
+               </a>`}
             </div>
          </div>
          </div>
@@ -79,14 +85,24 @@ window.addEventListener('DOMContentLoaded', event => {
                         <p class="card-text text-muted">Stack: ${stackShort}</p>
                   </div>
                   <div class="d-flex justify-content-end align-items-end mt-3">
-                     <button class="btn btn-primary btn-details" type="button" data-bs-toggle="modal" data-bs-target="#${id}Modal">Details</button>
-                     </div>
+                     <button class="btn btn-primary btn-details" type="button" data-bs-toggle="modal" data-bs-target="#${id}Modal">
+                        Details
+                     </button>
+                  </div>
                </div>
             </div>
          </div>
       </div>
       `
    }
+
+   const cardItems = document.querySelector('#card-items')
+   const modalsItems = document.querySelector('#project-modals')
+
+   projects.forEach(project => {
+      cardItems.innerHTML += generateProjectCard(project)
+      modalsItems.innerHTML += generateProjectModal(project)
+   })
 
    // HEADER SHRINK
 
@@ -105,15 +121,5 @@ window.addEventListener('DOMContentLoaded', event => {
 
    headerShrink()
    document.addEventListener('scroll', headerShrink)
-
-   const cardItems = document.querySelector('#card-items')
-   const modalsItems = document.querySelector('#project-modals')
-
-   projects.forEach(project => {
-      cardItems.innerHTML += generateProjectCard(project)
-      modalsItems.innerHTML += generateProjectModal(project)
-   })
-
-
 
 })

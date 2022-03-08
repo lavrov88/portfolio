@@ -4,7 +4,7 @@ const projects = [
       name: 'Rides history',
       imgPreview: 'rides_preview_s.jpg',
       images: ['rides_preview.png', 'rides_mob_1.png', 'rides_mob_2.png'],
-      description: "Catalogue of my group of friend's bicycle rides. Every ride has a data set consisting of members, statistics, photos and map with track.",
+      description: "Catalog of my group of friend's bicycle rides. Every ride has a data set consisting of members, statistics, photos and map with track.",
       functionality: [
          "List of rides that can be sorted by several parameters and filtered by members",
          "List separators and key parameters at the right side of list items are different for every type of sorting",
@@ -26,7 +26,7 @@ const projects = [
       name: 'Reactive shaverma',
       imgPreview: 'shaverma_small.jpg',
       images: ['shaverma_1.png','shaverma_2.png', 'shaverma_mob.png'],
-      description: "Imitation of shaverma online store",
+      description: "Shaverma online store imitation",
       functionality: [
          "One or two option for each shop item, depending on it's price",
          "The menu is fetched from fake server (json-server)",
@@ -55,7 +55,7 @@ const projects = [
       functionality: [
          "All lists together are placed on a screen, goods can be turned to bought by one click",
          "You can add several new goods at one moment. Just write them in add-goods menu, separating with commas.",
-         "Bought goods move to the end of a list. You can delete them from separated list or from all lists using menu button.",
+         "Bought goods move to the end of a list (with 2 sec delay for more convenient multi-element control). You can delete them from separated list or from all lists using menu button.",
          "Goods can be sorted, renamed or deleted in list options",
          "Lists also can be sorted, renamed, added, deleted. Their color can be changed.",
          "Mobile layout, dark theme and saving data in local storage are included"
@@ -72,9 +72,9 @@ const projects = [
       name: 'SamuraiJS social network',
       imgPreview: 'social_1.png',
       images: ['social_1.png', 'social_2.png', 'social_3.png', 'social_4.png'],
-      description: 'Learning project based on <a href="https://www.youtube.com/playlist?list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8" target="_blank">"SamuraiJS training course"</a>',
+      description: 'Learning project based on "<a href="https://www.youtube.com/playlist?list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8" target="_blank">React: way of Samurai training course</a>"',
       functionality: [
-         "Social network client. Data is stored at the learning server and is being fetched with REST-API",
+         "Social network client. Connected with REST API to the learning server.",
          "Displaying profile page with information, photo and status",
          "Ability to edit profile data, status and upload a new photo",
          "List of all users where you can follow them (if logged) or open their profile pages",
@@ -87,7 +87,7 @@ const projects = [
          'React (react-router-dom, React.lazy, React.Suspense CSS-modules, SCSS)',
          'Redux (react-redux, thunk, redux-form)',
          'TypeScript (partially)',
-         'REST API (fetching from <a href="https://social-network.samuraijs.com/docs" target="_blank">SamuraiJS backend</a>)'
+         'REST API, Axios (fetching from <a href="https://social-network.samuraijs.com/docs" target="_blank">SamuraiJS backend</a>)'
       ],
       github: 'https://github.com/lavrov88/social',
       deployed: 'https://lavrov88.github.io/social/'
@@ -127,6 +127,6 @@ const projects = [
          'Bootstrap 5 (styles, modals, buttons, cards)'
       ],
       github: 'https://github.com/lavrov88/portfolio',
-      deployed: "https://lavrov88.github.io/portfolio/"
+      deployed: ""
    }
 ]

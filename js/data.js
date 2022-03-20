@@ -19,7 +19,7 @@ const projects = [
          'Yandex Maps constructor',
    ],
       github: "https://github.com/lavrov88/rides",
-      deployed: "https://rides-history.herokuapp.com/"
+      deployed: "https://lavrov88.github.io/rides/"
    },
    {
       id: 'shaverma',

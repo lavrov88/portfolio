@@ -22,6 +22,27 @@ const projects = [
       deployed: "https://lavrov88.github.io/rides/"
    },
    {
+     id: 'shopping',
+     name: 'Smart shopping list',
+     imgPreview: 'shopping_1.png',
+     images: ['shopping_1.png', 'shopping_2.png', 'shopping_3.png', 'shopping_mob.png'],
+     description: "Shopping app with easy access to all lists and ability to quickly create several items.",
+     functionality: [
+       "All lists together are placed on a screen, goods can be turned to bought by one click",
+       "You can add several new goods at one moment. Just write them in add-goods menu, separating with commas.",
+       "Bought goods move to the end of a list (with 2 sec delay for more convenient multi-element control). You can delete them from separated list or from all lists using menu button.",
+       "Goods can be sorted, renamed or deleted in list options",
+       "Lists also can be sorted, renamed, added, deleted. Their color can be changed.",
+       "Mobile layout, dark theme and saving data in local storage are included"
+     ],
+     stackShort: "HTML, CSS, JS",
+     stackFull: [
+       "HTML, CSS, JS"
+     ],
+     github: "https://github.com/lavrov88/shopping",
+     deployed: "https://lavrov88.github.io/shopping/"
+   },
+   {
       id: 'shaverma',
       name: 'Reactive shaverma',
       imgPreview: 'shaverma_small.jpg',
@@ -47,25 +68,50 @@ const projects = [
       deployed: "https://reactive-shaverma.herokuapp.com/"
    },
    {
-      id: 'shopping',
-      name: 'Smart shopping list',
-      imgPreview: 'shopping_1.png',
-      images: ['shopping_1.png', 'shopping_2.png', 'shopping_3.png', 'shopping_mob.png'],
-      description: "Shopping app with easy access to all lists and ability to quickly create several items.",
-      functionality: [
-         "All lists together are placed on a screen, goods can be turned to bought by one click",
-         "You can add several new goods at one moment. Just write them in add-goods menu, separating with commas.",
-         "Bought goods move to the end of a list (with 2 sec delay for more convenient multi-element control). You can delete them from separated list or from all lists using menu button.",
-         "Goods can be sorted, renamed or deleted in list options",
-         "Lists also can be sorted, renamed, added, deleted. Their color can be changed.",
-         "Mobile layout, dark theme and saving data in local storage are included"
-      ],
-      stackShort: "HTML, CSS, JS",
-      stackFull: [
-         "HTML, CSS, JS"
-      ],
-      github: "https://github.com/lavrov88/shopping",
-      deployed: "https://lavrov88.github.io/shopping/"
+     id: 'contacts',
+     name: 'Contacts',
+     imgPreview: 'contacts_1.png',
+     images: ['contacts_1.png', 'contacts_2.png', 'contacts_3.png', 'contacts_4.png'],
+     description: 'List of contacts received from the server',
+     functionality: [
+       "List of cards with contacts with ability to add, edit or delete them",
+       "Contacts are stored on the server and fetched by REST API",
+       "Search is available with all contacts fields (server-side)",
+       "App has login page with verification from server",
+     ],
+     stackShort: "React, Redux, Axios Ant Design",
+     stackFull: [
+       'React',
+       'Redux, redux-thunk',
+       'TypeScript (actions, reducers, props types)',
+       'And Design (UI elements)',
+       'Axios (HTTP-requests)',
+       'json-server, json-server-auth (fake server with auth)',
+     ],
+     github: 'https://github.com/lavrov88/contacts',
+     deployed: ''
+   },
+   {
+     id: 'routes',
+     name: 'Routes List',
+     imgPreview: 'routes_1.jpg',
+     images: ['routes_1.jpg', 'routes_2.jpg'],
+     description: 'Editable list of points with generation of routes between them',
+     functionality: [
+       "Route points can be changed using selector for active route",
+       "Displaying map and route using OpenStreetMap data",
+       "Width of route's list and map can be changed by mouse dragging"
+     ],
+     stackShort: "React, Redux, Leaflet, Ant Design",
+     stackFull: [
+       'React',
+       'Redux',
+       'And Design (UI elements)',
+       'Leaflet, react-leaflet, leaflet-routing-machine (map-frameworks)',
+       'React-split (draggable border betweet list and map)',
+     ],
+     github: 'https://github.com/lavrov88/routes',
+     deployed: ''
    },
    {
       id: 'social',
@@ -92,26 +138,26 @@ const projects = [
       github: 'https://github.com/lavrov88/social',
       deployed: 'https://lavrov88.github.io/social/'
    },
-   {
-      id: 'todo-list',
-      name: 'Todo List',
-      imgPreview: 'todo_1.png',
-      images: ['todo_1.png', 'todo_2.png', 'todo_3.png'],
-      description: 'Simple todo app with ability to edit tasks and change their priority',
-      functionality: [
-         'Add, delete, edit tasks, toggle them as completed or change priority',
-         'New task can be added by pressing "+" button or Enter on keyboard',
-         'Task options appears on hover. On mobile version there is options button at the right side.',
-         "App data is saved to local storage and  is being loaded when the app starts",
-         "Too long names of tasks are trimmed. Also empty new task's name is checked.",
-      ],
-      stackShort: "HTML, CSS, JS",
-      stackFull: [
-         'HTML, CSS, JS'
-      ],
-      github: 'https://github.com/lavrov88/todo-list',
-      deployed: "https://lavrov88.github.io/todo-list/"
-   },
+  //  {
+  //     id: 'todo-list',
+  //     name: 'Todo List',
+  //     imgPreview: 'todo_1.png',
+  //     images: ['todo_1.png', 'todo_2.png', 'todo_3.png'],
+  //     description: 'Simple todo app with ability to edit tasks and change their priority',
+  //     functionality: [
+  //        'Add, delete, edit tasks, toggle them as completed or change priority',
+  //        'New task can be added by pressing "+" button or Enter on keyboard',
+  //        'Task options appears on hover. On mobile version there is options button at the right side.',
+  //        "App data is saved to local storage and  is being loaded when the app starts",
+  //        "Too long names of tasks are trimmed. Also empty new task's name is checked.",
+  //     ],
+  //     stackShort: "HTML, CSS, JS",
+  //     stackFull: [
+  //        'HTML, CSS, JS'
+  //     ],
+  //     github: 'https://github.com/lavrov88/todo-list',
+  //     deployed: "https://lavrov88.github.io/todo-list/"
+  //  },
    {
       id: 'portfolio',
       name: 'Portfolio',

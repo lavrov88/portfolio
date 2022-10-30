@@ -21,6 +21,31 @@ const projects = [{
     deployed: "https://lavrov88.github.io/rides/"
   },
   {
+    id: 'materials',
+    name: 'Building materials calculator',
+    imgPreview: 'materials_1.png',
+    images: ['materials_1.png', 'materials_2.png', 'materials_3.png', 'materials_4.png', 'materials_5.png'],
+    description: "App that helps you to calculate the amount of materials and their price",
+    functionality: [
+      "Creates the table with materials based on added list of works",
+      "Table can be customized by grouping materials or changing a view of title column",
+      "Added works save to URL, so link can be shared to other persons or devices",
+      "Option to batch add works for better convenience",
+      "List with added works is sorted automatically by works order",
+      "Mobile devices adapted (change layout, sizes, table's columns)",
+    ],
+    stackShort: 'Vue3, Vuex, TypeScript',
+    stackFull: [
+      "Vue3 (Composition API)",
+      "TypeScript (types for state, input data objects, functions)",
+      "Vuex (store modules, vuex-smart-module for type safe modules)",
+      "Vue-router (for reading and writing query parameters in URL)",
+      "Element+ (tables, drawers, dialogs, tabs, tooltips, etc)"
+    ],
+    github: "https://github.com/lavrov88/materials",
+    deployed: "https://lavrov88.github.io/materials/"
+  },
+  {
     id: 'shopping',
     name: 'Smart shopping list',
     imgPreview: 'shopping_1.png',
